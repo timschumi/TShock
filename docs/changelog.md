@@ -91,6 +91,7 @@ Use past tense when adding new entries; sign your name off when you add or chang
 * Fixed bug where when the `UseSqlLogs` config property is true, an empty log file would still get created. (@ZakFahey)
 * Fixed typo in `/gbuff`. (@sgkoishi, #2955)
 * Rewrote the `.dockerignore` file into a denylist. (@timschumi)
+* Added CI for Docker images. (@timschumi)
 
 ## TShock 5.2
 * An additional option `pvpwithnoteam` is added at `PvPMode` to enable PVP with no team. (@CelestialAnarchy, #2617, @ATFGK)

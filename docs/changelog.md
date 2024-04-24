@@ -92,6 +92,7 @@ Use past tense when adding new entries; sign your name off when you add or chang
 * Fixed typo in `/gbuff`. (@sgkoishi, #2955)
 * Rewrote the `.dockerignore` file into a denylist. (@timschumi)
 * Added CI for Docker images. (@timschumi)
+* Fixed Cursed Flares kicking players for invalid buff. (@Arthri)
 
 ## TShock 5.2
 * An additional option `pvpwithnoteam` is added at `PvPMode` to enable PVP with no team. (@CelestialAnarchy, #2617, @ATFGK)

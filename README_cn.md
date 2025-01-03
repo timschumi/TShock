@@ -1,5 +1,5 @@
 <p align="center">
-  <img src="https://tshock.co/newlogo.png" alt="TShock for Terraria"><br />
+  <img src="https://tshock.s3.us-west-001.backblazeb2.com/newlogo.png" alt="TShock for Terraria"><br />
   <a href="https://ci.appveyor.com/project/hakusaro/tshock">
     <img src="https://ci.appveyor.com/api/projects/status/chhe61q227lqdlg1?svg=true" alt="AppVeyor Build Status">
   </a>

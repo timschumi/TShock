@@ -6,6 +6,8 @@ jobs:
   build:
     runs-on: ubuntu-latest
     permissions:
+      attestations: write
+      id-token: write
       packages: write
     steps:
       - name: Checkout
@@ -28,6 +30,7 @@ jobs:
         with:
           images: ghcr.io/${{ github.repository }}
       - name: Build image
+        id: build
         uses: docker/build-push-action@v6
         with:
           context: .
@@ -38,3 +41,9 @@ jobs:
           pull: true
           cache-from: type=gha, scope=${{ github.workflow }}
           cache-to: type=gha, scope=${{ github.workflow }}
+      - name: Generate build provenance attestation
+        uses: actions/attest-build-provenance@v2
+        with:
+          subject-name: ghcr.io/${{ github.repository }}
+          subject-digest: ${{ steps.build.outputs.digest }}
+          push-to-registry: true
